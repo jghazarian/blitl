@@ -16,8 +16,16 @@ Visit http://localhost/src/index.html and if all went well, you should see your 
 More to come on this.  Basically, index.html is a shim that renders a jade template in your browser.
 You can specify which file is rendered in ```index.js```.
 
-When compiling the template, blitl will pass a ```fill``` object with a ```dev``` key set to ```true```.
-You can use 
+When compiling the template in the browser ```fill.dev``` will be set:
+
+```jade
+!!! 5
+head
+  if fill.dev
+    script(src="dev.js")
+  else
+    script(src="min.js")
+```
 
 When parsing the template you specify in ```index.js```, blitl will pass it a block containing script
 tags for the in-browser versions of coffee-script and less.  You can specify where they placed in the
