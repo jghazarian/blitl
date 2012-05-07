@@ -1,0 +1,9 @@
+[submodule "external/coffee-script"]
+	path = external/coffee-script
+	url = git://github.com/jashkenas/coffee-script.git
+[submodule "external/jade"]
+	path = external/jade
+	url = git://github.com/visionmedia/jade.git
+[submodule "external/less.js"]
+	path = external/less.js
+	url = git://github.com/cloudhead/less.js.git

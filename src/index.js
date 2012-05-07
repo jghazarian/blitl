@@ -1,0 +1,3 @@
+window.blitl = {
+  index: 'index'
+};
