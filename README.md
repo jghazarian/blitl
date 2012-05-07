@@ -29,7 +29,7 @@ head
 ```
 
 blitl will pass it a block containing script tags for the in-browser versions of coffee-script and less.
-You can specify where they placed in the template by yielding:
+You can specify where they are placed in the template by yielding:
 
 ```jade
 !!! 5
