@@ -2,6 +2,7 @@ blitl
 =====
 
 A skeleton project that let's you code and test directly in CoffeeScript, Jade, and LESS
+using any static file server
 
 ## Using
 
@@ -16,7 +17,7 @@ Visit http://localhost/src/index.html and if all went well, you should see your 
 More to come on this.  Basically, index.html is a shim that renders a jade template in your browser.
 You can specify which file is rendered in ```index.js```.
 
-When compiling the template in the browser ```fill.dev``` will be set:
+When templates are compiled in-browser, ```fill.dev``` will be set:
 
 ```jade
 !!! 5
@@ -27,9 +28,8 @@ head
     script(src="min.js")
 ```
 
-When parsing the template you specify in ```index.js```, blitl will pass it a block containing script
-tags for the in-browser versions of coffee-script and less.  You can specify where they placed in the
-template by yielding:
+blitl will pass it a block containing script tags for the in-browser versions of coffee-script and less.
+You can specify where they placed in the template by yielding:
 
 ```jade
 !!! 5
